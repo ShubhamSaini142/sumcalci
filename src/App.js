@@ -8,6 +8,11 @@ function App() {
   const [add, setAdd] = useState('')
 
   const calcsum = (event) => {
+
+    if(num1 == null || num2 == null){
+      alert("Input some numbers")
+  
+    }
     event.preventDefault() 
     setAdd(parseInt(num1)+parseInt(num2))
   }
